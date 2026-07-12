@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <title>AI chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+    <h1>My AI Chatbot</h1>
+<div>
+    <div id="chat-box">
+        <p>Hello! Ask me anything.</p>
+    </div>
+    <input type="text" id="message"placeholder="Type your message......">
+    <button onclick="newChat()"> New Chat</button> <button onclick="deleteChat()">Delete Chat</button>
+    <button onclick="sendMessage()">send</button>
+</div>
+<script src="{{ url_for('static',filename='script.js') }}"></script>
+</body>
+</html>
